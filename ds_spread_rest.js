@@ -34,6 +34,30 @@ const sum1=(...number)=>{  //rest
 console.log(sum1(1,2,3));
 
 
+const arr = [1,2,3,4,5,6,7,8,9,10];
+//foreach do not return any values
 
+// const greaternum = arr.filter((num)=>{
+//     return num>5;
+// })
 
+// console.log(greaternum);
+
+// const addten = arr.map((num)=>{    //map returns value
+//     return num+10; 
+// });
+// console.log(addten);
+
+const chaining = arr.map((num)=>{
+    return num+10;
+}).filter((num)=>{
+    return num>15;
+});
+
+console.log(chaining);
+
+const sum2 = arr.reduce((total,num)=>{
+     return total+=num;
+},0);
+console.log(sum2);
 
