@@ -16,7 +16,9 @@ const app =express();
 const usersdata = require("./MOCK_DATA.json");
 const port=5000;
 
+//middleware
 app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
 app.use((req,res,next)=>{
     console.log("middleware1");
