@@ -2,7 +2,8 @@
   "dependencies": {
     "express": "^5.2.1",
     "mongoose": "^9.2.0",
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.1.11",
+    "type":"modules"
   },
   "scripts": {
     "start":  "node index.js"
