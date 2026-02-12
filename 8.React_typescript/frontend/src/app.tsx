@@ -1,6 +1,9 @@
 import react from "react";
+import MyCounter from "./myFilr";
 
 const App: react.FC =()=>{
-    return <h1>HII</h1>
+    return <div>
+        <MyCounter />
+    </div>
 }
 export default App;

@@ -1,14 +1,23 @@
-import react from "react";
+import React from "react";
 import Todolist from "./Todo_items/todo.jsx";
 
-const Todo :react.FC = ()=>{
+interface TodoItem {
+  id: number;
+  title: string;
+}
+
+interface TodoProps {
+  items: TodoItem[];
+}
+
+const Todo: React.FC<TodoProps> = ({ items }) => {
   return (
-    <ul>
-    <Todolist title="Eat"/>
-    <Todolist  title="sleep"/>
-    <Todolist title="code"/>
-    <Todolist title="repeat"/>
-    </ul>
+    <ol>
+      {items.map((item) => (
+        <Todolist key={item.id} title={item.title} />
+      ))}
+    </ol>
   )
 }
+
 export default Todo;

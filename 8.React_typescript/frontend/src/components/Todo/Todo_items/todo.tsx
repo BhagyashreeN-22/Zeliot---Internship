@@ -1,18 +1,13 @@
-import react from "react";
+import React from "react";
 
-interface todolistprops{
-    title :string,
+interface TodolistProps {
+    title: string;
 }
 
-const Todolist : react.FC<todolistprops> = (props)=>{
+const Todolist: React.FC<TodolistProps> = ({ title }) => {
     return (
-        <div>
-            <li>{props.title}</li>
-        </div>
+        <li>{title}</li>
     )
 }
 
 export default Todolist;
-
-//props are things send from parent to childern
-// in interface title is complusory so if we want to do it optional we shud put ? ..eg:title?:string 
