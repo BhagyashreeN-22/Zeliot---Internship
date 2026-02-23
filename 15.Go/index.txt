@@ -1,0 +1,1 @@
+ so order of execution llb lifo in deffer ...so last in first out ..so output ll b hello one world
